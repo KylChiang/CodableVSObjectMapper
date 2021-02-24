@@ -15,6 +15,8 @@
 		61D8EE1625E5587D00486D27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61D8EE1425E5587D00486D27 /* LaunchScreen.storyboard */; };
 		61D8EE2125E5587D00486D27 /* CodableVSObjectMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D8EE2025E5587D00486D27 /* CodableVSObjectMapperTests.swift */; };
 		61D8EE2C25E5587D00486D27 /* CodableVSObjectMapperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D8EE2B25E5587D00486D27 /* CodableVSObjectMapperUITests.swift */; };
+		61D8EE3D25E55C8500486D27 /* CakeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D8EE3C25E55C8500486D27 /* CakeType.swift */; };
+		61D8EE4A25E5DF8100486D27 /* String+Convertor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D8EE4925E5DF8100486D27 /* String+Convertor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		61D8EE2725E5587D00486D27 /* CodableVSObjectMapperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodableVSObjectMapperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61D8EE2B25E5587D00486D27 /* CodableVSObjectMapperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableVSObjectMapperUITests.swift; sourceTree = "<group>"; };
 		61D8EE2D25E5587D00486D27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61D8EE3C25E55C8500486D27 /* CakeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeType.swift; sourceTree = "<group>"; };
+		61D8EE4925E5DF8100486D27 /* String+Convertor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Convertor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				61D8EE0925E5587D00486D27 /* AppDelegate.swift */,
 				61D8EE0B25E5587D00486D27 /* SceneDelegate.swift */,
 				61D8EE0D25E5587D00486D27 /* ViewController.swift */,
+				61D8EE3C25E55C8500486D27 /* CakeType.swift */,
+				61D8EE4925E5DF8100486D27 /* String+Convertor.swift */,
 				61D8EE0F25E5587D00486D27 /* Main.storyboard */,
 				61D8EE1225E5587D00486D27 /* Assets.xcassets */,
 				61D8EE1425E5587D00486D27 /* LaunchScreen.storyboard */,
@@ -261,6 +267,8 @@
 				61D8EE0E25E5587D00486D27 /* ViewController.swift in Sources */,
 				61D8EE0A25E5587D00486D27 /* AppDelegate.swift in Sources */,
 				61D8EE0C25E5587D00486D27 /* SceneDelegate.swift in Sources */,
+				61D8EE3D25E55C8500486D27 /* CakeType.swift in Sources */,
+				61D8EE4A25E5DF8100486D27 /* String+Convertor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

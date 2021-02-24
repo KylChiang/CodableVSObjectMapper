@@ -8,10 +8,26 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    let json = """
+    {
+      "version": "1.2.3",
+      "cakeTypeList": [
+        {
+            "name": "Banna Cake",
+            "price": 150
+        },
+        {
+            "name": "Chocolate Cake",
+            "price": 200
+        }
+      ]
+    }
+    """
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        print("jsonStrToDictionary: \(json.toDictionary())")
     }
 
 
