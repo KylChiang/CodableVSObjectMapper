@@ -6,15 +6,35 @@
 //
 
 import Foundation
+import ObjectMapper
 
 // MARK: - CakeType
-struct CakeType: Codable {
-    var version: String
-    var cakeTypeList: [CakeTypeList]
+struct CakeType: Mappable {
+    var version: String = ""
+    var cakeTypeList: [CakeTypeList] = [CakeTypeList]()
+    
+    init?(map: Map) {
+        
+    }
+    
+    mutating func mapping(map: Map) {
+        version <- map["version"]
+        cakeTypeList <- map["cakeTypeList"]
+    }
 }
 
 // MARK: - CakeTypeList
-struct CakeTypeList: Codable {
-    var name: String
-    var price: Int
+struct CakeTypeList: Mappable {
+    var name: String = ""
+    var price: Int = 0
+    
+    init?(map: Map) {
+        
+    }
+    
+    mutating func mapping(map: Map) {
+        name <- map["name"]
+        price <- map["price"]
+    }
+    
 }
