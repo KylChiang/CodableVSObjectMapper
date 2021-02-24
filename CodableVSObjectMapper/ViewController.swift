@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ObjectMapper
 
 class ViewController: UIViewController {
     let json = """
@@ -27,7 +28,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("jsonStrToDictionary: \(json.toDictionary())")
+        let cakeType = CakeType(JSONString: json)
+        print("\(cakeType?.cakeTypeList[1].name ?? "")")
     }
 
 
