@@ -27,9 +27,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("jsonStrToDictionary: \(json.toDictionary())")
+        if let cakeType = getModel(json: json, to: CakeType.self) {
+            print("\(cakeType.cakeTypeList[1].name)")
+        }
+        
     }
 
-
+    func getModel<T: Decodable>(json: String, to type: T.Type) -> T? {
+        let jsonData = Data(json.utf8)
+        
+        if let item = try? JSONDecoder().decode(T.self, from: jsonData) {
+            return item
+        }
+        return nil
+    }
 }
 
