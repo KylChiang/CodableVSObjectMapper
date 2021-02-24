@@ -28,9 +28,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // using ObjectMapper
         let cakeType = CakeType(JSONString: json)
         print("\(cakeType?.cakeTypeList[1].name ?? "")")
-        if let cakeType = getModel(json: json, to: CakeType.self) {
+        
+        // using codable
+        if let cakeType = getModel(json: json, to: CakeTypeCodable.self) {
             print("\(cakeType.cakeTypeList[1].name)")
         }
         
